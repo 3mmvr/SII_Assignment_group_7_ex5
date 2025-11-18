@@ -88,8 +88,7 @@ function createTrainLayer(geojsonData) {
 
 // Cargar los DOS GeoJSON y combinarlos
 Promise.all([
-    fetch('train_stations.geojson').then(r => r.json()),
-    fetch('5_train_stations_Hector.geojson').then(r => r.json())
+    fetch('train_stations.geojson').then(r => r.json())
 ])
 .then(([geo1, geo2]) => {
     const merged = {
@@ -107,5 +106,5 @@ Promise.all([
 })
 .catch(error => {
     console.error('Error loading GeoJSON files:', error);
-    alert('Error loading GeoJSON files. Check that both train_stations.geojson and 5_train_stations_Hector.geojson are in the same folder as this HTML file.');
-});
+    alert('Error loading GeoJSON files. Check that both train_stations.geojson are in the same folder as this HTML file.');
+});ß

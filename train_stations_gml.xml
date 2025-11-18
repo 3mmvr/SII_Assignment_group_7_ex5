@@ -89,5 +89,75 @@
             </tn:trainLines>
         </tn:Station>
     </tn:station>
+
+    <tn:station>
+        <tn:Station gml:id="S04">
+            <gml:description>Railway station at Düsseldorf Airport</gml:description>
+            <gml:name>Düsseldorf Flughafen</gml:name>
+            <tn:city>Düsseldorf</tn:city>
+            <tn:location>
+                <gml:Point gml:id="PT04" srsName="EPSG:4326">
+                    <!-- lat lon order adjusted to match your target format -->
+                    <gml:pos>51.277812 6.766946</gml:pos>
+                </gml:Point>
+            </tn:location>
+            <tn:trainLines>
+                <tn:trainLine id="RE02">
+                    <tn:from>Düsseldorf Flughafen</tn:from>
+                    <tn:to>Münster (Westf) Hbf</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="RE01">
+                    <tn:from>Düsseldorf Flughafen</tn:from>
+                    <tn:to>Essen Hbf</tn:to>
+                </tn:trainLine>
+            </tn:trainLines>
+        </tn:Station>
+    </tn:station>
+
+    <tn:station>
+        <tn:Station gml:id="S01">
+            <gml:description>Main railway station in Münster</gml:description>
+            <gml:name>Münster (Westf) Hbf</gml:name>
+            <tn:city>Münster</tn:city>
+            <tn:location>
+                <gml:Point gml:id="PT01" srsName="EPSG:4326">
+                    <gml:pos>51.962 7.634</gml:pos>
+                </gml:Point>
+            </tn:location>
+            <tn:trainLines>
+                <tn:trainLine id="RE02">
+                    <tn:from>Düsseldorf Flughafen</tn:from>
+                    <tn:to>Münster (Westf) Hbf</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="RE06">
+                    <tn:from>Münster (Westf) Hbf</tn:from>
+                    <tn:to>Dortmund Hbf</tn:to>
+                </tn:trainLine>
+            </tn:trainLines>
+        </tn:Station>
+    </tn:station>
+
+    <tn:station>
+        <tn:Station gml:id="S02">
+            <gml:description>Main railway station in Essen</gml:description>
+            <gml:name>Essen Hbf</gml:name>
+            <tn:city>Essen</tn:city>
+            <tn:location>
+                <gml:Point gml:id="PT02" srsName="EPSG:4326">
+                    <gml:pos>51.451 7.013</gml:pos>
+                </gml:Point>
+            </tn:location>
+            <tn:trainLines>
+                <tn:trainLine id="RE01">
+                    <tn:from>Düsseldorf Flughafen</tn:from>
+                    <tn:to>Essen Hbf</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="S3">
+                    <tn:from>Essen Hbf</tn:from>
+                    <tn:to>Hattingen (Ruhr) Mitte</tn:to>
+                </tn:trainLine>
+            </tn:trainLines>
+        </tn:Station>
+    </tn:station>
     
 </tn:TrainNetwork>
