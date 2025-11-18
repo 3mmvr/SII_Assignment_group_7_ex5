@@ -107,4 +107,4 @@ Promise.all([
 .catch(error => {
     console.error('Error loading GeoJSON files:', error);
     alert('Error loading GeoJSON files. Check that both train_stations.geojson are in the same folder as this HTML file.');
-});ß
+});
