@@ -26,21 +26,6 @@
                         "id": "L3",
                         "from": "Köln",
                         "to": "Münster"
-                    },
-                    {
-                        "id": "RE02",
-                        "from": "Düsseldorf Flughafen",
-                        "to": "Münster (Westf) Hbf"
-                    },
-                    {
-                        "id": "RE05",
-                        "from": "Düsseldorf Flughafen",
-                        "to": "Bonn Hauptbahnhof"
-                    },
-                    {
-                        "id": "RE01",
-                        "from": "Düsseldorf Flughafen",
-                        "to": "Essen Hbf"
                     }
                 ]
             }
