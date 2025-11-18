@@ -85,26 +85,13 @@ function createTrainLayer(geojsonData) {
         }
     });
 }
-
-// Cargar los DOS GeoJSON y combinarlos
-Promise.all([
-    fetch('train_stations.geojson').then(r => r.json())
-])
-.then(([geo1, geo2]) => {
-    const merged = {
-        type: 'FeatureCollection',
-        features: [
-            ...geo1.features,
-            ...geo2.features
-        ]
-    };
-
-    const layer = createTrainLayer(merged).addTo(map);
-
-    // Ajustar el mapa a todas las estaciones
-    map.fitBounds(layer.getBounds(), { padding: [50, 50] });
-})
-.catch(error => {
-    console.error('Error loading GeoJSON files:', error);
-    alert('Error loading GeoJSON files. Check that both train_stations.geojson are in the same folder as this HTML file.');
-});
+fetch('train_stations.geojson')
+    .then(r => r.json())
+    .then(geo => {
+        const layer = createTrainLayer(geo).addTo(map);
+        map.fitBounds(layer.getBounds(), { padding: [50, 50] });
+    })
+    .catch(error => {
+        console.error('Error loading GeoJSON:', error);
+        alert('Error loading train_stations.geojson');
+    });
